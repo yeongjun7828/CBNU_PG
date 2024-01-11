@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<launch>
+    <node pkg="localizer" name="localizer" type="localizer" output="screen">
+      <!-- sensor -->
+      <param name="imu_topic"    value="/imu/data"  type="string"/>        
+      <param name="gps_topic"    value="/ublox_gps/fix"  type="string"/>
+      <!-- utm -->
+      <param name="utm_topic"    value="/utm" type="string"/>
+    </node>
+</launch>

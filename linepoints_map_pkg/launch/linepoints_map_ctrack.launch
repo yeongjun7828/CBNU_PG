@@ -1,0 +1,13 @@
+<!-- -*- mode: XML -*- -->
+
+<launch>
+    <node name="linepoints_map" pkg="linepoints_map_pkg" type="linepoints_map_pkg_exe" output="screen" respawn="true">
+         <param name="EntirePathFile" type="string" value="$(find linepoints_map_pkg)/data/c-track/Waypoints_Ctrack(20220622).csv" />
+        <param name="EntireLineFile" type="string" value="$(find linepoints_map_pkg)/data/c-track/LineMarkPoints_Ctrack(20220622).csv"/>
+        <param name="frame_id" type="string" value="map" />
+	<param name="UTM_Offset/X" type="double" value="360951.74" />
+	<param name="UTM_Offset/Y" type="double" value="4065819.35" />
+    </node>
+
+</launch>
+

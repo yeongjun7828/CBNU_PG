@@ -1,0 +1,9 @@
+<launch>
+    <node name="global_path" pkg="global_path" type="global_path" output="screen">
+        <!-- C-track-->
+        <param name="offset_x" value="360951.74" type="double" />
+        <param name="offset_y" value="4065819.35" type="double" />
+        
+        <param name="path_dir" value="$(find global_path)/path_data" type="string"/>
+    </node>
+</launch>
